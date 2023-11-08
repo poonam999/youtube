@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is About Page.You can go through whole YouTube quickly as a short summary.A breif introduction about Youtube">
+  <meta name="Keywords" 
+    content="movie video, youtube intro video,intro audio,youtube services">
+  <!-- Linking Normalize.css External Styles-->
+  <link rel="stylesheet" href="./assets/styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Linking Custom External styles -->
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header-fixed">
+    <div class="header-wrapper">
+      <aside class="collapsible-menu">
+        <button type="button" aria-label="button"><i class="fa-solid fa-bars"></i></button>
+        <!-- <nav id="primaryNav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/">Shorts</a></li>
+            <li><a href="/">Subscriptions</a></li>
+            <li><a href="/">Library</a></li>
+            <li><a href="/">History</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul> 
+        </nav> -->
+      </aside>
+      <div class="main-header">
+        <a href="./index.html" class="logo-link">
+          <img 
+            src="./assets/images/youtube-logo.png" 
+            alt="YouTube Logo" 
+            height="48"
+            width="55"></a>
+        <div class="controls-bar">
+          <input type="search" class="search-input" placeholder="Search" aria-label="Enter Search Query">
+          <button aria-label="Search Button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button aria-label="Mic"><i class="fa-solid fa-microphone"></i></button>
+          <button aria-label="Search"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <button class="sign-button"><i class="fa-solid fa-user"></i>Sign in</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main style="padding-top: 80px;">
+    <div class="about-page">
+      <aside id="sidebarNav" class="about-menu">
+        <nav>
+          <ul>
+            <li><a href="./about.html#aboutYouTube">About Youtube</a></li>
+            <li><a href="./about.html#ytIntroVideo">Youtube Intro Video</a></li>
+            <li><a href="./about.html#ytIntroAudio">Youtube Intro Audio</a></li>
+            <li><a href="./about.html#ytServices">Youtube Services</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- div>section*4>h2+p -->
+      <div>
+        <section id="aboutYouTube" class="about-youtube">
+          <h1>About YouTube!</h1>
+          <p>
+            YouTube is an American online video sharing and social media platform headquartered in San Bruno, California.
+            It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google, and 
+            is  the second most visited website, after Google Search.YouTube has more than 2.5 billion monthly users who 
+            collectively watch more than one billion hours of videos each day. 
+          </p>
+          <a href="/index.html">Browse Videos</a>
+        </section>
+
+        <section id="ytIntroVideo" class="about-video">
+          <h2>YouTube Intro Video</h2>
+          <video width="600" controls>
+            <source src="./assets/videos/all-about-youtube.mp4" type="video/mp4">
+          </video>
+        </section>
+
+        <section id="ytIntroAudio" class="about-audio">
+          <h2>YouTube Intro Audio</h2>
+          <audio controls>
+            <source src="./assets/audios/sample-audio.mp3" type="audio/mpeg">
+          </audio>
+        </section>
+
+        <section id="ytServices" class="about-services">
+          <h2>Youtube Services</h2>
+          <h2>YouTube Premium</h2>
+          <p>
+            Main article: YouTube Premium
+            YouTube Premium (formerly YouTube Red) is YouTube's premium subscription service.
+            It offers advertising-free streaming, access to original programming, and background and offline video playback
+            on mobile devices.
+            YouTube Premium was originally announced on November 12, 2014, as "Music Key",
+            a subscription music streaming service, and was intended to integrate with and replace the existing Google Play
+            Music "All Access" service.
+          </p>
+        
+          <h2>YouTube Kids</h2>
+          <p>
+            Main article: YouTube Kids
+            YouTube Kids is an American children's video app developed by YouTube, a subsidiary of Google.
+            The app was developed in response to parental and government scrutiny on the content available to children.
+            As of September 2019, the app is available in 69 countries, including Hong Kong and Macau,
+            and one province. YouTube launched a web-based version of YouTube Kids on August 30, 2019.
+          </p>
+          
+          <h2>YouTube Music</h2>
+          <p>
+            Main article: YouTube Music
+            On September 28, 2016, YouTube named Lyor Cohen, the co-founder of 300 Entertainment and former Warner Music
+            Group executive,
+            the Global Head of Music.In early 2018, Cohen began hinting at the possible launch of YouTube's new subscription
+            music streaming service,
+            a platform that would compete with other services such as Spotify and Apple Music.On May 22, 2018,
+            the music streaming platform named "YouTube Music" was launched.
+          </p>
+          
+          <h2>YouTube Movies</h2>
+          <p>
+            YouTube Movies is a service by YouTube that shows movies via its website. Around 100–500 movies are free to
+            view, with ads.
+            Some new movies get added and some get removed, unannounced at a new month.
+          </p>
+
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center">
+    <nav id="secondaryNav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <p>Copyright &copy; 2023 | Poonam</p>
+    </nav>
+  </footer>  
+</body>
+
+</html>

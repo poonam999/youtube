@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is Contact Page.Any queries can be addressed here.">
+  <meta name="Keywords" 
+    content="location,email-id,phone number">
+  <!-- Linking Normalize.css External Styles-->
+  <link rel="stylesheet" href="./assets/styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Linking Custom External styles -->
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header-fixed">
+    <div class="header-wrapper">
+      <aside class="collapsible-menu">
+        <button type="button" aria-label="button"><i class="fa-solid fa-bars"></i></button>
+        <!-- <nav id="primaryNav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/">Shorts</a></li>
+            <li><a href="/">Subscriptions</a></li>
+            <li><a href="/">Library</a></li>
+            <li><a href="/">History</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul> 
+        </nav> -->
+      </aside>
+      <div class="main-header">
+        <a href="./index.html" class="logo-link">
+          <img 
+            src="./assets/images/youtube-logo.png" 
+            alt="YouTube Logo" 
+            height="48"
+            width="55"></a>
+        <div class="controls-bar">
+          <input type="search" class="search-input" placeholder="Search" aria-label="Enter Search Query">
+          <button aria-label="Search Button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button aria-label="Mic"><i class="fa-solid fa-microphone"></i></button>
+          <button aria-label="Search"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <button class="sign-button"><i class="fa-solid fa-user"></i>Sign in</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 60px">
+    <h1 style="text-align: center;">Contact Us</h1>
+
+    <div class="contact-page">
+      <section class="locate-here">
+        <h2>Locate us here</h2>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241879.53225728308!2d73.60468252466517!3d18.69234947710555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbe8c9bda71d%3A0xed1f51fc88fd8550!2sCognizant%20ISH%20office!5e0!3m2!1sen!2sin!4v1670390565018!5m2!1sen!2sin" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section class="reach-here">
+        <h2>Reach us here</h2>
+        <address>
+          <h4>Cognizant Technology Solutions</h4>
+          Plot # 26, Ish Info tech,<br> 
+          Rajiv Gandhi Infotech Park,<br>
+          MIDC, Phase I, Hinjawadi,<br>
+          Pune, Maharashtra 411057.
+          <p>Phone no:- 020 4021 6000</p>
+          <p>E-mail:- <a href="mailto:contact@cognizant.com">contact@cognizant.com</a></p>
+        </address>
+      </section>
+    </div>
+
+    <section>
+      <h2 style="text-align: center;">Contact us by filling the form</h2>
+      <form class="contact-form">
+        <div class="field-group">
+          <label for="nameInput">Enter Name:</label>
+          <input id="nameInput" 
+            type="text" 
+            name="fullName" 
+            placeholder="Enter Your Name" 
+            required>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Enter Email-id:</label>
+          <input id="email" 
+            type="email" 
+            name="email"
+            placeholder="Enter Email Id"
+            required>
+        </div>
+
+        <div class="field-group">
+          <label for="phone">Enter Number:</label>
+          <input type="tel" 
+            id="phone" 
+            name="phone"
+            placeholder="Enter Phone Number"
+            required>
+        </div>
+
+        <div class="field-group">
+          <label for="queryInput" class="query-label">Enter Query:</label>
+          <textarea name="enterQuery" 
+            id="enterQuery" 
+            cols="30" 
+            rows="5" 
+            placeholder=" Enter your Query"
+            aria-label="Query box"
+            required style="width: 334px; border-radius: 7px"
+            required></textarea>
+        </div>
+
+        <div class="field-group">
+          <button type="Submit">Submit</button>
+          <button type="Reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center">
+    <nav id="secondaryNav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <p>Copyright &copy; 2023 | Poonam</p>
+    </nav>
+  </footer>
+</body>
+
+</html>

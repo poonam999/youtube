@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>HTML5 JS API</title> 
+
+  <style>
+    .draggable-box{
+      border: solid 1px black;
+      width: 200px;
+      height: 40px;
+      background-color: aquamarine;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .droppable-box{
+      border: solid 1px #ccc;
+      width: 400px;
+      height: 120px;
+      background-color: lightgoldenrodyellow;
+      text-align: center;
+      padding: 50px 0;
+    }
+  </style>
+
+  <script src="./assets/scripts/main.js"></script>
+</head>
+<body>
+
+  <h1>HTML5 JS API</h1>
+
+  <h2>Web Storage | Demo</h2>
+  <input type="text" placeholder="Enter Pincode" id="pinText">
+  <button onclick="handleSavePin()">Save Pincode</button>
+  <p>
+    Entered Pincode:
+    <span id="pinCode"></span>
+    <button onclick="handleDeletePin()">Delete Pincode</button>
+  </p>
+
+  <hr>
+  <h2>Geolocation | Demo</h2>
+  <button onclick="handleLocateMe()">Locate Me</button>
+  <div id="usersLocation">
+    Latitude is: <p id="latitude"></p>
+    Longitude is: <p id="longitude"></p>
+  </div>
+
+  <hr>
+  <h2> Drag and Drop API | Demo</h2>
+
+  <div 
+    id="draggableBox" 
+    draggable="true" 
+    class="draggable-box"
+    ondragstart="handleDragStart(event)">
+    Draggable Box
+  </div>
+
+  <div 
+    id="droppableBox" 
+    class="droppable-box"
+    ondragover="handleDragOver(event)"
+    ondrop="handleDrop(event)">
+    Droppable Box
+  </div>
+
+  <h2>Webworker, Post Message, Receive Message - Demo</h2>
+  <form>
+    <div>
+      <label for="number1">Multiply number 1: </label>
+      <input type="number" id="number1" value="0">
+    </div>
+    <div>
+      <label for="number2">Multiply number 2: </label>
+      <input type="number" id="number2" value="0">
+    </div>
+  </form>
+  <p class="result">Result: 0</p>
+
+  <h2>Custom Elements</h2>
+  <popup-info data-text="First Popup -- Looks cool"></popup-info>
+  
+  <script src="./assets/scripts/main.js"></script>
+</body>
+</html>
